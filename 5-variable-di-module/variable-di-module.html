@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Variable di Module JS Module</title>
+        <script
+            type="module"
+            src="/5-variable-di-module/variable-di-module.mjs"></script>
+    </head>
+    <body>
+        <script type="module">
+            /**
+             * Menggunakan Variable Module
+             */
+            console.info(name);
+
+            /**
+             * Import Variable
+             */
+            import { nameVar } from "/5-variable-di-module/variable-di-module.mjs";
+            console.info(nameVar);
+        </script>
+    </body>
+</html>
