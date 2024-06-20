@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Export Multiple JS Module</title>
+    </head>
+    <body>
+        <script type="module">
+            /**
+             * Import Module.
+             */
+            import {
+                company,
+                sum,
+                Company,
+            } from "/7-export-multiple/multiple.mjs";
+
+            console.info(`const company = "${company}"`);
+            console.info(`10 + 11 = ${sum(10, 11)}`);
+
+            const newCompany = new Company("Jl. Belum Ada", "Belum ada .Tbk");
+            console.info(newCompany);
+            console.info(
+                `alamat perusahaan ${newCompany.nama}: ${newCompany.lokasi}`
+            );
+        </script>
+    </body>
+</html>
