@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Alias, JS Modules</title>
+    </head>
+    <body>
+        <script type="module">
+            /**
+             * Import alias di module asal.
+             */
+            import {
+                perusahaan,
+                perkalian,
+                Perusahaan,
+            } from "/8-alias/alias.mjs";
+
+            console.info(perusahaan);
+            console.info(`2 x 3 = ${perkalian(2, 3)}`);
+            console.info(new Perusahaan());
+            // cara diatas tidak direkomendasikan.
+        </script>
+        <script type="module">
+            /**
+             * Import alias di module tujuan.
+             */
+            import {
+                company as perusahaanLagi,
+                multiply as perkalianLagi,
+                Company as PerusahaanLagi,
+            } from "/8-alias/alias-lagi.mjs";
+
+            console.info(perusahaanLagi);
+            console.info(`2 x 3 = ${perkalianLagi(2, 3)}`);
+            console.info(new PerusahaanLagi("Belum Ada", "Jl. Belum Ada"));
+        </script>
+    </body>
+</html>
