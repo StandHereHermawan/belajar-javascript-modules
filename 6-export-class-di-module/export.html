@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Export Class di Module, JS Module</title>
+    </head>
+    <body>
+        <script type="module">
+            /**
+             * Menggunakan Class di Module.
+             */
+            import { Person } from "/6-export-class-di-module/export.js";
+
+            const person = new Person("Arief");
+            person.sayHello("Hilmi");
+        </script>
+    </body>
+</html>
