@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Import KeyWord JS Modules</title>
+        <script type="module" src="/4-import/say.js"></script>
+        <script type="module" src="/4-import/sapa.mjs"></script>
+    </head>
+    <body>
+        <script type="module">
+            /**
+             * Import Module.
+             */
+            import { sayHello, sayGoodBye } from "/4-import/say.js";
+            sayHello("Arief");
+            sayGoodBye("Arief");
+
+            console.info(name);
+            /**
+             * Import Module Iseng.
+             */
+            import {
+                sayHallo,
+                saySelamatTinggal,
+                nameHilmi,
+            } from "/4-import/sapa.mjs";
+            sayHallo("Arief");
+            saySelamatTinggal("Arief");
+
+            console.info(nameHilmi);
+        </script>
+    </body>
+</html>
