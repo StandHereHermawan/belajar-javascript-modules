@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Aggregate Modules JS Modules</title>
+    </head>
+    <body>
+        <script type="module">
+            import {
+                Person,
+                sayHello,
+                sayGoodBye,
+                sum,
+            } from "/11-aggregating-modules/aggregate-modules.mjs";
+
+            const person = new Person("Arief");
+            person.sayHello("Hilmi");
+
+            sayHello("Bangun");
+            sayGoodBye("Bangun");
+
+            console.info(`10 + 10 = ${sum(10, 10)}`);
+        </script>
+    </body>
+</html>
